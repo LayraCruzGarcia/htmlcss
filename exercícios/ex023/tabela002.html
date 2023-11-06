@@ -22,16 +22,22 @@
         td.num{
             text-align: right;
         }
+        caption{
+            background-color: lightgrey;
+            padding: 5px;
+
+        }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <!--Cabeça-->
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
             </tr>
         </thead>
 
@@ -74,7 +80,7 @@
         <!--Rodapé-->
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>138.662.757</strong></td>
             </tr>
         </tfoot>
